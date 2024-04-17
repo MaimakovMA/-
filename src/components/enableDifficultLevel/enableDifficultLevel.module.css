@@ -1,0 +1,33 @@
+.checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 30px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .heading {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-left: 12px;
+  }
+  
+  .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 29px;
+    flex-shrink: 0;
+  }
+  
