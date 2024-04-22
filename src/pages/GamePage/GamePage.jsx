@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-
 import { Cards } from "../../components/Cards/Cards";
 import { ErrorCounter } from "../../components/ErrorCounter/ErrorCounter.jsx";
 import { useSelector } from "react-redux";

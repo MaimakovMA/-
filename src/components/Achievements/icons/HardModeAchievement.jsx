@@ -88,7 +88,7 @@ export function HardModeAchievement(hardMode) {
             <rect width="212" height="78" rx="12" fill="#C2F5FF" />
             <path d="M14 87L14 73L34 73L14 87Z" fill="#C2F5FF" />
           </svg>
-          <p className={styles.toolTipTextWider}>Игра пройдена сложном режиме</p>
+          <p className={styles.toolTipTextWider}>Игра пройдена в сложном режиме</p>
         </div>
       )}
     </div>

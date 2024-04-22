@@ -1,7 +1,5 @@
 import styles from "./EndGameModal.module.css";
-
 import { Button } from "../Button/Button";
-
 import deadImageUrl from "./images/dead.png";
 import celebrationImageUrl from "./images/celebration.png";
 import { useSelector } from "react-redux";

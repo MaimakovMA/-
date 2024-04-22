@@ -56,7 +56,7 @@ export function Cards({ pairsCount = 3, previewSeconds = 5 }) {
   // Количество ошибок в режиме игры до трех ошибок
   const errors = useSelector(state => state.game.errors);
   // Статус режима игры до трех ошибок
-  const setIsActiveGameMode = useSelector(state => state.game.setIsActiveGameMode);
+  const isActiveGameMode = useSelector(state => state.game.isActiveGameMode);
   // Доступно ли использование прозрения
   const [isEpiphanyAvailable, setIsEpiphanyAvailable] = useState(true);
   // Доступно ли использование алохоморы
@@ -166,7 +166,7 @@ export function Cards({ pairsCount = 3, previewSeconds = 5 }) {
     if (playerLost) {
       dispatch(updateErrors());
 
-      if (!setIsActiveGameMode === 3) {
+      if (!isActiveGameMode) {
         finishGame(STATUS_LOST);
       } else {
         const updatedCards = nextCards.map(card => {

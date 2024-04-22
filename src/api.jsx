@@ -1,4 +1,5 @@
-const host = "https://wedev-api.sky.pro/api/leaderboard";
+const host = "https://wedev-api.sky.pro/api/v2/leaderboard";
+const host1 = "https://wedev-api.sky.pro/api/v2/leaderboard";
 
 export function getLeaders() {
   return fetch(host).then(response => {
@@ -11,7 +12,7 @@ export function getLeaders() {
 }
 
 export function addLeader({ username, time, achievements }) {
-  return fetch(host, {
+  return fetch(host1, {
     method: "POST",
     body: JSON.stringify({ name: username, time: time, achievements: achievements() }),
   }).then(response => {
